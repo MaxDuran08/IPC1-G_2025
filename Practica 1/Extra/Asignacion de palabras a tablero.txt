@@ -1,0 +1,35 @@
+
+
+For( i>= vector.length){
+
+	String palabra = vector_palabras[i];
+
+	int tamaño_palabra = palabra.length()
+
+	int direccion = random(2)
+	string resultado_direccion;
+
+	if(direccion==1){
+		resultado_direccion = horizontal
+	}else{
+		
+		resultado_direccion = vertical
+	}
+
+	
+	int pos1 = random(16-tamaño_palabra);
+	int pos2 = random(16-tamaño_palabra);
+
+	for(i<= tamaño_palabra){
+		if(resultado_direccion == horizontal){
+			Tablero[pos1][pos2]= palabra[i]
+			pos2 = pos2 + 1;
+		}else{
+			Tablero[pos2][pos1]= palabra[i]
+			pos1 = pos1 + 1;
+		}
+		
+	}
+
+
+}
